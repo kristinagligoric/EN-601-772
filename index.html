@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 
-    <meta property="og:site_name" content="EN 601.124 (The Ethics of Artificial Intelligence and Automation)">
+    <meta property="og:site_name" content="EN 601.772 (Advanced Topics in AI for Social Science Discovery)">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="EN 601.124 (The Ethics of Artificial Intelligence and Automation)">
-    <meta property="og:description" content="Equiping students with ethical frameworks to critically evaluate AI systems and to design, deploy, and govern responsible AI">
+    <meta property="og:title" content="EN 601.772 (Advanced Topics in AI for Social Science Discovery)">
+    <meta property="og:description" content="An advanced seminar on LLM-based methods for social science: synthetic participants, AI-augmented surveys, and simulations of human behavior">
 
-    <title>EN 601.124: The Ethics of Artificial Intelligence and Automation </title>
+    <title>EN 601.772: Advanced Topics in AI for Social Science Discovery</title>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="files/bootstrap.min.css">
@@ -30,18 +30,7 @@
             scroll-behavior: smooth;
         }
         /* Offset for fixed navbar */
-        .content-section {
-            padding-top: 70px;
-            margin-top: -70px;
-        }
-    </style>
-
-    <style>
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Offset for fixed navbar */
+        .content-section,
         section {
             padding-top: 70px;
             margin-top: -70px;
@@ -49,13 +38,13 @@
     </style>
 </head>
 
-<body data-new-gr-c-s-check-loaded="14.1063.0" data-gr-ext-installed="">
+<body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand brand" href="index.html">CS 124</a>
+            <a class="navbar-brand brand" href="index.html">CS 772</a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="icon-bar"></span>
@@ -78,43 +67,62 @@
     <a href="https://www.cs.jhu.edu/">
         <img src="files/jhu_shield.png" class="logo-right">
     </a>
-    <h1>EN 601.124: The Ethics of Artificial Intelligence and Automation</h1>
-    <h3>Johns Hopkins University - Spring 2026</h3>
+    <h1>EN 601.772: Advanced Topics in AI for Social Science Discovery</h1>
+
+    <h3>Johns Hopkins University - Fall 2026</h3>
     <div style="clear:both;"></div>
 </div>
 
 <!-- Intro -->
 <div class="container sec" id="intro">
     <p>
-         
-
-        This course prepares engineers to reason about and design responsible AI systems by examining ethical issues. Students will study the ethical use of data, including human subjects, human data, and privacy; analyze what can go wrong in AI systems through structured discussions of AI risks; and build an ethical framework grounded in philosophical foundations and algorithmic fairness. The course then turns to societal impacts of AI, including effects on factuality, emotional harms, employment and the future of work. In the final portion of the course, students will examine how ethical AI principles are translated into practice through theory of change, institutions, partnerships, and policy. Through a semester-long group research project on a topic of their choice, students will apply these concepts to real-world challenges.
-
-        In addition to ethical analysis, this course emphasizes how ethical principles can be operationalized through design choices and institutional mechanisms. This is a discussion-based class with numerous readings, discussion, and debates.
-        
+        This advanced course explores state-of-the-art AI methods for social science research, focusing on LLM-based
+        approaches including synthetic participants, AI-augmented surveys, and computational simulations of human
+        behavior, including historical participants. Students will critically evaluate recent work through
+        paper discussions and an original research project. Projects will involve empirical work with publication
+        potential, such as replication studies comparing synthetic to human data, meta-analyses of field practices, or
+        development of validation frameworks for the emerging field of AI-augmented social science.
     </p>
+
     <p>
-        <b>Course Objectives:</b> Upon completion of this course, students will be able to:
+        This is a research-oriented seminar: the emphasis throughout is on validity. When can AI-generated data stand in
+        for human data, how would we know, and what has to be reported for anyone else to believe it?
+    </p>
+
+    <p>
+        <b>Prerequisites:</b> Having taken a graduate-level computer science course in Artificial Intelligence or
+        Machine Learning (including CSS, NLP, Computer Vision, etc.) is expected. Students must be comfortable with
+        reading recent research papers and discussing key concepts and ideas.
+    </p>
+
+    <p>
+        <b>Course Goals:</b> Specific outcomes for this course are that students will be able to:
     <ul>
-        <li>Identify and explain key ethical issues in AI and automation from historical, philosophical, and societal perspectives.</li>
-        <li>Analyze different perspectives on AI ethics and their consequences for AI and automation design and evolving policy initiatives.</li>
-        <li>Critically evaluate current emerging AI-enabled technologies through ethical frameworks, as well as forecast ethical dilemmas, and propose ethically aligned technical solutions.</li>
-
-        
-
+        <li>Determine appropriate use cases for AI-augmented methods by comparing their strengths and weaknesses against
+            traditional social science approaches (surveys, experiments, qualitative interviews) for specific research
+            questions.
+        </li>
+        <li>Design and execute rigorous studies that assess whether AI-generated data (synthetic survey responses,
+            simulated behaviors, agent interactions) accurately represent human populations and social phenomena.
+        </li>
+        <li>Critically evaluate methodological claims in published research, identifying validity threats, confounds,
+            and limitations in studies using LLMs for social science applications.
+        </li>
+        <li>Implement reproducible research practices including pre-registration, comprehensive reporting of prompts and
+            model parameters, sensitivity analyses, and proper documentation of AI system configurations.
+        </li>
+        <li>Conduct original empirical research that contributes to methodological knowledge in AI-augmented social
+            science, whether through replication studies, validation frameworks, meta-analyses, or novel applications.
+        </li>
     </ul>
     </p>
 
 
-    <p>
-        <strong>Relevant Courses at Hopkins</strong>:
-        This course has some overlap with "AI Ethics and Social Impact" (offered in the fall semesters) (<a
-            href="https://ai-ethics-601-770.cs.jhu.edu/fa2024/index.html">EN.601.770</a>), though it is less advanced.
-    </p>
+
 
     <p>
         <strong>Thank you to Daniel Khashabi for sharing the course website template!</strong>
-    </p>  
+    </p>
 </div>
 
 <!-- Staff Info -->
@@ -181,7 +189,7 @@ function loadAllContent() {
             document.getElementById('logistics-section').innerHTML = '<div class="container sec"><h2>Error</h2><p>Could not load logistics content.</p></div>';
             console.error('Error loading logistics:', error);
         });
-    
+
     // Load schedule
     fetch('schedule.html')
         .then(response => response.text())
@@ -192,7 +200,7 @@ function loadAllContent() {
             document.getElementById('schedule-section').innerHTML = '<div class="container sec"><h2>Error</h2><p>Could not load schedule content.</p></div>';
             console.error('Error loading schedule:', error);
         });
-    
+
     // Load conduct
     fetch('conduct.html')
         .then(response => response.text())
@@ -209,10 +217,10 @@ function loadAllContent() {
 document.addEventListener('DOMContentLoaded', function() {
     // Scroll to top first
     window.scrollTo(0, 0);
-    
+
     // Then load all content
     loadAllContent();
-    
+
     // Extra insurance: scroll to top after a brief delay
     setTimeout(function() {
         window.scrollTo(0, 0);
